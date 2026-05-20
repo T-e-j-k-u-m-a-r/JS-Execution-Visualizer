@@ -42,7 +42,7 @@
 
   <!-- Floating Beta Banner -->
   <div class="beta-banner">
-    <span>Beta 1.0 — Share your feedback, suggestions & feature requests!</span>
+    <span>Beta 1.0 — <a href="https://github.com/T-e-j-k-u-m-a-r/JS-Execution-Visualizer/issues" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">Share your feedback, suggestions & feature requests</a>!</span>
   </div>
 
   <!-- Main Content -->
@@ -145,9 +145,29 @@
 
   <!-- Footer -->
   <footer class="border-t border-gray-700/50 bg-[#16162a] px-6 py-3 text-center">
-    <p class="text-xs text-gray-500">
-      Powered by <span class="text-gray-300 font-semibold">Tejkumar Kempaiah</span>
-    </p>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 flex-wrap">
+      <span class="text-lg sm:text-xl font-bold text-gray-300">Powered by 
+        <a href="https://www.linkedin.com/in/tejkumargk/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-blue-400 hover:underline">
+          <img src="https://media.licdn.com/dms/image/C5603AQFQwQwQwQwQwQwQwQ/profile-displayphoto-shrink_200_200/0/1516881234567?e=2147483647&v=beta&t=placeholder" alt="LinkedIn Profile" class="w-6 h-6 rounded-full border border-blue-400 mr-1" onerror="this.style.display='none'">
+          Tejkumar Kempaiah
+        </a>
+      </span>
+    </div>
+    <style>
+      @media (max-width: 640px) {
+        footer .flex {
+          flex-direction: column !important;
+          gap: 0.5rem !important;
+        }
+        footer .text-lg, footer .text-xl {
+          font-size: 1rem !important;
+        }
+        footer img.w-6 {
+          width: 1.5rem !important;
+          height: 1.5rem !important;
+        }
+      }
+    </style>
   </footer>
 
   <script src="script.js"></script>
